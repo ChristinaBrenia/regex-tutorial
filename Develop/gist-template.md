@@ -6,6 +6,10 @@ Introductory paragraph (replace this with your text)
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
+For this tutorial, I will be walking you through the regular (or Regex) for matching a Hex Value. The Regex expression for matching a hex value is /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
+The table of contents below breaks down the 
+
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -23,6 +27,14 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+In a Regex expression, Anchors provide you information about the expression but are not involved in the symbols that make up the process. 
+
+In our Regex expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/ there are two anchors. The symbols ^ and $ are both anchors. Both of these anchors have two different meanings. 
+
+The ^ anchor marks the begining of the string
+The $ anchor marks the end of the string
+
+Both of these anchors continue to have the same meaning in other regex expressions.
 
 ### Quantifiers
 
