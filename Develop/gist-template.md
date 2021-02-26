@@ -48,7 +48,17 @@ The {3} quantifier works in the same way but with three characters. So, aaa woul
 
 ### OR Operator
 
+There is one OR operator within the regex expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
+The | is the or operator. It's name is self explaintator as the or operator is saying the expression can be one way OR the another way within the confines of the quantifiers. So, in our regex expression, we are searching for a hex code of either three characters OR 6 characters. 
+
+As you can see, the | marks the middle of the regex expression seperating the [a-f0-9]{6} and [a-f0-9]{3}
+
 ### Character Classes
+
+In the regex expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/ we have a set of the same character classes. The character classes are [a-f0-9] 
+
+Character classes are located within the [ ]. Character classes are characters we want to match in a search. Character classes can stand alone or be hyphened. In our regex expression, the hyphen means "through." So, our regex expression can use the characters a through f and 0 through 9. This means we are using all the numbers and letters inbetween 0 and 9 and a through f. 
 
 ### Flags
 
