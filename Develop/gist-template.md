@@ -38,6 +38,14 @@ Both of these anchors continue to have the same meaning in other regex expressio
 
 ### Quantifiers
 
+Two quantiriers are within the regex expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
+The quantifier ? is greedy. Greedy means that the character that comes before is equal to 0 or 1, and is optional in a search. The character that comes before the ? is the #. This means that during the search, a # may or may not be present.
+
+The quantifier {} is located within the regex expression twice. Once as {6} and once as {3}. This expresses the amount of characters that is nneded. For example, we will look at what comes before the {6} in the first half of the regex. This is [a-f0-9]. The {6} dictates that there must be 6 of [a-f0-9] characters. So, aaaaaa would be appropiate as well as 000000 would also be appropiate. 
+
+The {3} quantifier works in the same way but with three characters. So, aaa would be appropiate for the {3} quantifier. 
+
 ### OR Operator
 
 ### Character Classes
