@@ -16,7 +16,7 @@ The table of contents below breaks down the
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
+<!-- - [Flags](#flags) -->
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
@@ -60,11 +60,20 @@ In the regex expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/ we have a set of the sam
 
 Character classes are located within the [ ]. Character classes are characters we want to match in a search. Character classes can stand alone or be hyphened. In our regex expression, the hyphen means "through." So, our regex expression can use the characters a through f and 0 through 9. This means we are using all the numbers and letters inbetween 0 and 9 and a through f. 
 
-### Flags
+<!-- ### Flags -->
 
 ### Grouping and Capturing
 
+In the regex /^#?([a-f0-9]{6}|[a-f0-9]{3})$/ the grouping is done by the () 
+This grouping encapselates character classes and treats them as a single unit.
+
+In other words, the () dictate that [a-f0-9] as a string that is contained. 
+
 ### Bracket Expressions
+
+In our regex, the bracket expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/ the bracket expression is []. There are two within our regex. 
+
+This bracket expression tells us to match the characters enclosed within it. 
 
 ### Greedy and Lazy Match
 
