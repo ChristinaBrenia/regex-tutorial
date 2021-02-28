@@ -86,3 +86,8 @@ This bracket expression tells us to match the characters enclosed within it.
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+
+
+My name is Christina Brenia and I am exploring Javascript, Node.js, Database, CSS, HTML and other web development languages and techniques. 
+
+My Github profile can be found here: https://github.com/ChristinaBrenia?tab=repositories
